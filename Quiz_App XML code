@@ -1,0 +1,511 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/wall3"
+        tools:context="com.example.lenovo.simple_quiz_app.MainActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZ"
+            android:textSize="30dp"
+            android:textColor="#64a318"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Pick any one answer from the following questions"
+            android:textSize="20sp"
+            android:textColor="#b6163b"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:id="@+id/editing_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NAME"
+            android:inputType="textCapWords"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.)What is the standard taste of the water? "
+            android:textSize="25dp"
+            android:textColor="#0d9989"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salty"
+                android:checked="false"
+                android:id="@+id/radioButton1"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweet"
+                android:checked="false"
+                android:id="@+id/radioButton2"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water has No Taste"
+                android:checked="false"
+                android:id="@+id/radioButton3"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All of the above"
+                android:checked="false"
+                android:id="@+id/radioButton4"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.)Which of the following is used in pencils?"
+            android:textSize="25dp"
+            android:textColor="#0d32d6"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup2">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graphite"
+                android:checked="false"
+                android:id="@+id/radioButton5"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="silicon"
+                android:checked="false"
+                android:id="@+id/radioButton6"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charcoal"
+                android:checked="false"
+                android:id="@+id/radioButton7"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phosporous"
+                android:checked="false"
+                android:id="@+id/radioButton8"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.)Entomology is the science that studies"
+            android:textSize="25dp"
+            android:textColor="#40930d"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup3">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Behaviour of human beings"
+                android:checked="false"
+                android:id="@+id/radioButton9"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="insects"
+                android:checked="false"
+                android:id="@+id/radioButton10"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="formation of rocks"
+                android:checked="false"
+                android:id="@+id/radioButton11"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="technical and scientific terms"
+                android:checked="false"
+                android:id="@+id/radioButton12"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.)'OS' computer abbreviation usually means ?"
+            android:textSize="25dp"
+            android:textColor="#3c597e"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup4">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="order of significance"
+                android:checked="false"
+                android:id="@+id/radioButton13"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="operating system"
+                android:checked="false"
+                android:id="@+id/radioButton14"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="open software"
+                android:checked="false"
+                android:id="@+id/radioButton15"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="optical sensor"
+                android:checked="false"
+                android:id="@+id/radioButton16"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.)'MOV' extension refers usually to what kind of file?"
+            android:textSize="25dp"
+            android:textColor="#31b608"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup5">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image file"
+                android:checked="false"
+                android:id="@+id/radioButton17"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie or Animation file"
+                android:checked="false"
+                android:id="@+id/radioButton18"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audio file"
+                android:checked="false"
+                android:id="@+id/radioButton19"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MS Office Document"
+                android:checked="false"
+                android:id="@+id/radioButton20"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6)What is www meant for"
+            android:textSize="25dp"
+            android:textColor="#d99a08"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup6">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="world wide web"
+                android:checked="false"
+                android:id="@+id/radioButton21"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="who will work"
+                android:checked="false"
+                android:id="@+id/radioButton22"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wining warrious of washington DC"
+                android:checked="false"
+                android:id="@+id/radioButton23"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None of above"
+                android:checked="false"
+                android:id="@+id/radioButton24"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.)Which is different from below list"
+            android:textSize="25dp"
+            android:textColor="#d45c12"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup7">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="html"
+                android:checked="false"
+                android:id="@+id/radioButton25"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="css"
+                android:checked="false"
+                android:id="@+id/radioButton26"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="javascript"
+                android:checked="false"
+                android:id="@+id/radioButton27"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C++"
+                android:checked="false"
+                android:id="@+id/radioButton28"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8.)C is ?"
+            android:textSize="25dp"
+            android:textColor="#1cd94b"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup8">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A third generation high level language"
+                android:checked="false"
+                android:id="@+id/radioButton29"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A machine language"
+                android:checked="false"
+                android:id="@+id/radioButton30"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" An assembly language"
+                android:checked="false"
+                android:id="@+id/radioButton31"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None of the above"
+                android:checked="false"
+                android:id="@+id/radioButton32"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.)The World Largest desert is "
+            android:textSize="25dp"
+            android:textColor="#3230a4"
+            />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup9">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thar"
+                android:checked="false"
+                android:id="@+id/radioButton33"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sahara"
+                android:checked="false"
+                android:id="@+id/radioButton34"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalahari"
+                android:checked="false"
+                android:id="@+id/radioButton35"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sonoran"
+                android:checked="false"
+                android:id="@+id/radioButton36"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.)The National Technology Day is celebrated on which of the following date?
+"
+            android:textSize="25dp"
+            android:textColor="#9c102a"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgroup10">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 10th"
+                android:checked="false"
+                android:id="@+id/radioButton37"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 9th"
+                android:checked="false"
+                android:id="@+id/radioButton38"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 11th"
+                android:checked="false"
+                android:id="@+id/radioButton39"
+                android:onClick="rbclick"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="May 12th"
+                android:checked="false"
+                android:id="@+id/radioButton40"
+                android:onClick="rbclick"
+                />
+        </RadioGroup>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SUBMIT"
+           android:id="@+id/result"
+           android:layout_marginLeft="70dp"
+           android:onClick="submitans"
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TRY AGAIN"
+           android:id="@+id/reattempt"
+           android:onClick="again"
+           />
+   </LinearLayout>
+    </LinearLayout>
+</ScrollView>
